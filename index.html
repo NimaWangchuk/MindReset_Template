@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>3x3 Mindset Reset — Day 2 Worksheet</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #fef9f9, #dceffc);
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    h1, h2 {
+      text-align: center;
+      color: #3a3a3a;
+    }
+    .section {
+      margin-bottom: 2rem;
+    }
+    label {
+      font-weight: bold;
+      display: block;
+      margin: 1rem 0 0.5rem;
+    }
+    input[type="text"], textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+    .buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 2rem;
+    }
+    button {
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .reset {
+      background-color: #f44336;
+      color: white;
+    }
+    .submit {
+      background-color: #4CAF50;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+<h1>3x3 MIND RESET</h1>
+<h2>✨ Positivity Attracts Opportunities</h2>
+
+<form id="mindsetForm">
+  <div class="section">
+    <h3>✅ 1. List 3 Positive Triggers</h3>
+    <input type="text" placeholder="Trigger 1" />
+    <input type="text" placeholder="Trigger 2" />
+    <input type="text" placeholder="Trigger 3" />
+  </div>
+
+  <div class="section">
+    <h3>🧠 2. Rewrite 3 Limiting Beliefs</h3>
+    <label>Belief 1</label>
+    <input type="text" placeholder="Old Belief" />
+    <input type="text" placeholder="New Empowering Belief" />
+
+    <label>Belief 2</label>
+    <input type="text" placeholder="Old Belief" />
+    <input type="text" placeholder="New Empowering Belief" />
+
+    <label>Belief 3</label>
+    <input type="text" placeholder="Old Belief" />
+    <input type="text" placeholder="New Empowering Belief" />
+  </div>
+
+  <div class="section">
+    <h3>🚪 3. Spot 3 New Opportunities</h3>
+    <input type="text" placeholder="Opportunity 1" />
+    <input type="text" placeholder="Opportunity 2" />
+    <input type="text" placeholder="Opportunity 3" />
+  </div>
+
+  <div class="buttons">
+    <button type="button" class="reset" onclick="document.getElementById('mindsetForm').reset()">Reset</button>
+    <button type="submit" class="submit">Print</button>
+  </div>
+</form>
+
+<script>
+  // Allow printing the filled form
+  document.getElementById('mindsetForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    window.print();
+  });
+</script>
+
+</body>
+</html>
